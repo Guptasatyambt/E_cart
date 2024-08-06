@@ -1,6 +1,6 @@
-## User
+# User
 ## Add new user
-# Post request
+ Post request
 Request-http://localhost:5001/api/v1/user/signin
 {
 "email":"asd@gmail.com",
@@ -39,7 +39,7 @@ Response-
 }
 
 ## Login Request
-# Request-Post
+Request-Post
 url-http://localhost:5001/api/v1/user/login
 request body-
 {
@@ -56,7 +56,7 @@ Response-
 }
 }
 ## Get Info
-# Request-Get
+ Request-Get
 url-http://localhost:5001/api/v1/user/getinfo
 Response-
 {
@@ -72,7 +72,7 @@ Response-
 }
 
 ## Add to cart
-# Request-post
+ Request-post
 url-http://localhost:5001/api/v1/user/addtocart
 send bearer token in auth, “itemId”, “number”
 {
@@ -92,9 +92,9 @@ Response-
   }
 }
 
-## Seller
+# Seller
 ## Signin
-# Request-post
+ Request-post
 url-http://localhost:5001/api/v1/seller/signin
 {
   "email":"sdwd@gmail.com",
@@ -111,7 +111,7 @@ Response-
 }
 
 ## Upload info
-# Request-post
+Request-post
 url-http://localhost:5001/api/v1/seller/uploadinfo
 Send “name”, “address”, “mobile”, “profileimage”and beared token
 Response-
@@ -135,7 +135,7 @@ Response-
 }
 
 ## Login
-# Request-post
+Request-post
 url-http://localhost:5001/api/v1/seller/login
 {
   "email":"sdwd@gmail.com",
@@ -152,7 +152,7 @@ Response-
 }
 
 ## GetInfo
-# Request-get
+Request-get
 url-http://localhost:5001/api/v1/seller/getinfo
 send bearer token
 Response-
@@ -170,9 +170,9 @@ Response-
   "__v": 0
 }
 
-## Item
+# Item
 ## Add new
-# Request-post
+Request-post
 url- http://localhost:5001/api/v1/item/addnewitem
 send token of seller and “type”, “size”, “quantity”, “color” and “images”
 Response-
@@ -216,9 +216,9 @@ Response-
   "message": "Deleted Sucessfully"
 }
 
-## Order
+# Order
 ## create
-# Request-post
+Request-post
 url- http://localhost:5001/api/v1/order/makeorder
 {
   "userid":"6692b0a0eb4400f54926f28e",
@@ -235,7 +235,7 @@ Response-
 }
 
 ## Make order delievered
-# Request-post
+Request-post
 url- http://localhost:5001/api/v1/order/orderdelievered
 {
   "orderid":"66aa57ff1be2e3482706b588"
@@ -260,7 +260,7 @@ Response-
 }
 
 ## cancel order
-# Request-post
+Request-post
 url- http://localhost:5001/api/v1/order/cancelorder
 {
   "orderid":"66aa57ff1be2e3482706b588"
@@ -271,7 +271,7 @@ Response-
 }
 
 ## Get info of order
-# Request-get
+Request-get
 url- http://localhost:5001/api/v1/order/getinfo
 {
   "orderid":"66aa57ff1be2e3482706b588"
