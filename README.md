@@ -1,6 +1,6 @@
-##User
-#Add new user
-#Post request
+## User
+## Add new user
+# Post request
 Request-http://localhost:5001/api/v1/user/signin
 {
 "email":"asd@gmail.com",
@@ -38,8 +38,8 @@ Response-
 }
 }
 
-#Login Request
-#Request-Post
+## Login Request
+# Request-Post
 url-http://localhost:5001/api/v1/user/login
 request body-
 {
@@ -55,8 +55,8 @@ Response-
 "name": "abnbn"
 }
 }
-#Get Info
-#Request-Get
+## Get Info
+# Request-Get
 url-http://localhost:5001/api/v1/user/getinfo
 Response-
 {
@@ -71,8 +71,8 @@ Response-
 "__v": 0
 }
 
-#Add to cart
-#Request-post
+## Add to cart
+# Request-post
 url-http://localhost:5001/api/v1/user/addtocart
 send bearer token in auth, “itemId”, “number”
 {
@@ -92,9 +92,9 @@ Response-
   }
 }
 
-##Seller
-#Signin
-#Request-post
+## Seller
+## Signin
+# Request-post
 url-http://localhost:5001/api/v1/seller/signin
 {
   "email":"sdwd@gmail.com",
@@ -110,8 +110,8 @@ Response-
   }
 }
 
-#Upload info
-Request-post
+## Upload info
+# Request-post
 url-http://localhost:5001/api/v1/seller/uploadinfo
 Send “name”, “address”, “mobile”, “profileimage”and beared token
 Response-
@@ -134,8 +134,8 @@ Response-
   }
 }
 
-#Login
-Request-post
+## Login
+# Request-post
 url-http://localhost:5001/api/v1/seller/login
 {
   "email":"sdwd@gmail.com",
@@ -151,8 +151,8 @@ Response-
   }
 }
 
-#GetInfo
-Request-get
+## GetInfo
+# Request-get
 url-http://localhost:5001/api/v1/seller/getinfo
 send bearer token
 Response-
@@ -170,9 +170,9 @@ Response-
   "__v": 0
 }
 
-##Item
-#Add new
-Request-post
+## Item
+## Add new
+# Request-post
 url- http://localhost:5001/api/v1/item/addnewitem
 send token of seller and “type”, “size”, “quantity”, “color” and “images”
 Response-
@@ -204,7 +204,7 @@ Response-
   "__v": 0
 }
 
-#delete
+## delete
 Request-delete
 url- http://localhost:5001/api/v1/item/ deleteitem
 send “itemid”
@@ -216,9 +216,9 @@ Response-
   "message": "Deleted Sucessfully"
 }
 
-##Order
-#create
-Request-post
+## Order
+## create
+# Request-post
 url- http://localhost:5001/api/v1/order/makeorder
 {
   "userid":"6692b0a0eb4400f54926f28e",
@@ -234,8 +234,8 @@ Response-
   }
 }
 
-#Make order delievered
-Request-post
+## Make order delievered
+# Request-post
 url- http://localhost:5001/api/v1/order/orderdelievered
 {
   "orderid":"66aa57ff1be2e3482706b588"
@@ -259,8 +259,8 @@ Response-
   }
 }
 
-#cancel order
-Request-post
+## cancel order
+# Request-post
 url- http://localhost:5001/api/v1/order/cancelorder
 {
   "orderid":"66aa57ff1be2e3482706b588"
@@ -270,8 +270,8 @@ Response-
   "message": "Order cancelled"
 }
 
-#Get info of order
-Request-get
+## Get info of order
+# Request-get
 url- http://localhost:5001/api/v1/order/getinfo
 {
   "orderid":"66aa57ff1be2e3482706b588"
